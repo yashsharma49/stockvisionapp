@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Information System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4f1f8c3d1d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>📈 Stock Market Information System</h1>
+
+        <p>Live Stock Prices • Company Profiles • News • Watchlist</p>
+
+    </header>
+
+    <div class="search-box">
+    <input
+        type="text"
+        id="symbol"
+        placeholder="Enter Stock Symbol (Example: AAPL)"
+    >
+    <button id="searchBtn">
+        Search
+    </button>
+</div>
+
+
+    <div id="result"></div>
+    <div class="card">
+    <canvas id="stockChart"></canvas>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/script.js"></script>
+
+<footer>
+
+    <hr>
+
+    <h2>📈 Stock Market Information System</h2>
+
+    <p>
+        Developed with ❤️ by <strong>Yash Sharma</strong>
+    </p>
+
+    <p>
+        B.Tech Computer Science & Engineering (Core)
+    </p>
+
+    <p>
+        Graphic Era (Deemed to be) University, Dehradun
+    </p>
+
+    <div class="social-links">
+
+        <a href="https://www.linkedin.com/in/yash-sharma-567a52273?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+           target="_blank">
+            💼 LinkedIn
+        </a>
+
+        <a href="https://www.instagram.com/yash_sharma49?igsh=MXJmYmZ0M3R1eW12eg=="
+           target="_blank">
+            📷 Instagram
+        </a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 Stock Market Information System. All Rights Reserved.
+    </p>
+
+    <p class="powered">
+        Powered by Finnhub API • Node.js • Express.js • HTML • CSS • JavaScript
+    </p>
+
+</footer>
+
+</body>
+</html>
