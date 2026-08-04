@@ -3,7 +3,7 @@ const axios = require("axios");
 
 const app = express();
 
-const API_KEY = "d9fjo19r01qu5nhepis0d9fjo19r01qu5nhepisg";
+const API_KEY = process.env.FINNHUB_API_KEY;
 
 app.use(express.static("public"));
 
@@ -84,8 +84,10 @@ app.get("/news", async (req, res) => {
 
 });
 
-app.listen(5000, () => {
+const PORT = process.env.PORT || 5000;
 
-    console.log("Server Running on http://localhost:5000");
+app.listen(PORT, () => {
+
+    console.log(`Server running on port ${PORT}`);
 
 });
