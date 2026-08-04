@@ -19,18 +19,20 @@ async function getPrice() {
 
     try {
 
+        const API = "https://stockvisionapp.onrender.com";
+        
         // Fetch Stock Price
-        const priceResponse = await fetch(`/price?symbol=${symbol}`);
+        const priceResponse = await fetch(`${API}/price?symbol=${symbol}`);
         const price = await priceResponse.json();
 
 
         // Fetch Company Profile
-        const profileResponse = await fetch(`/profile?symbol=${symbol}`);
+        const profileResponse = await fetch(`${API}/profile?symbol=${symbol}`);
         const profile = await profileResponse.json();
 
 
         // Fetch News
-        const newsResponse = await fetch(`/news?symbol=${symbol}`);
+        const newsResponse = await fetch(`${API}/news?symbol=${symbol}`);
         const news = await newsResponse.json();
 
 
